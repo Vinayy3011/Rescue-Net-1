@@ -1,0 +1,33 @@
+{
+  "folders": [
+    {
+      "name": "Rescue-Net Root",
+      "path": "."
+    },
+    {
+      "name": "Frontend (React + Vite)",
+      "path": "src"
+    },
+    {
+      "name": "Backend (FastAPI)",
+      "path": "backend"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/dist": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "ms-python.python",
+      "bradlc.vscode-tailwindcss"
+    ]
+  }
+}
