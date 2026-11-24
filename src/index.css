@@ -1,3 +1,4 @@
+
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -6,40 +7,56 @@
   --font-mono: 'JetBrains Mono', monospace;
 }
 
-/* Custom Leaflet Map styling for emergency dashboard */
+/* Green and White Global Theme */
+:root {
+  --primary-green: #15803d;
+  --dark-green: #166534;
+  --light-green: #dcfce7;
+  --background-white: #ffffff;
+  --text-dark: #14532d;
+}
+
+body {
+  background-color: var(--background-white);
+  color: var(--text-dark);
+  font-family: var(--font-sans);
+}
+
+/* Emergency Dashboard Map */
 .leaflet-container {
   font-family: inherit;
-  background-color: #e2e8f0;
+  background-color: #f0fdf4;
   width: 100%;
   height: 100%;
   z-index: 1;
 }
 
-/* Ensure controls are clearly visible */
+/* Map Zoom Controls */
 .leaflet-control-zoom a {
-  background-color: #0f172a !important;
-  color: #f8fafc !important;
-  border-color: #334155 !important;
+  background-color: #15803d !important;
+  color: #ffffff !important;
+  border-color: #166534 !important;
 }
 
 .leaflet-control-zoom a:hover {
-  background-color: #1e293b !important;
+  background-color: #166534 !important;
 }
 
+/* Map Popup Styling */
 .leaflet-popup-content-wrapper {
-  background-color: #0f172a;
-  color: #f8fafc;
-  border: 1px solid #334155;
+  background-color: #ffffff;
+  color: #14532d;
+  border: 1px solid #86efac;
   border-radius: 0.5rem;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 25px -5px rgba(22, 101, 52, 0.15);
 }
 
 .leaflet-popup-tip {
-  background-color: #0f172a;
-  border: 1px solid #334155;
+  background-color: #ffffff;
+  border: 1px solid #86efac;
 }
 
-/* Pulse animation for SOS beacon */
+/* SOS Emergency Beacon - Keep Red for Visibility */
 @keyframes beacon-pulse {
   0% {
     transform: scale(0.95);
