@@ -351,6 +351,7 @@ export const LandingPage: React.FC = () => {
                 <span className="text-gray-500 block text-[11px]">Project Developers:</span>
 
                 <div className="space-y-0.5">
+                  <div><strong className="text-green-950">Pranjal Shelke</strong> <span className="font-mono text-[11px] text-gray-500">(Roll 61)</span></div>
                   <div><strong className="text-green-950">Vinay Kale</strong> <span className="font-mono text-[11px] text-gray-500">(Roll 65)</span></div>
                   <div><strong className="text-green-950">Tina Savkare</strong> <span className="font-mono text-[11px] text-gray-500">(Roll 67)</span></div>
                   <div><strong className="text-green-950">Vivek Choursiya</strong> <span className="font-mono text-[11px] text-gray-500">(Roll 68)</span></div>
